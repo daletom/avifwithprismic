@@ -197,8 +197,8 @@
       <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
         <img
           class="absolute inset-0 w-full h-full object-cover"
-          src="https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format,compress&w=720"
-          srcset="https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format,compress&w=720 1x, https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format,compress&w=720&dpr=2 2x"
+          src="https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format"
+          srcset="https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format 1x, https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format 2x"
           alt="" 
         />
       </div>
