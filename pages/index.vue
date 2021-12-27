@@ -194,11 +194,11 @@
           </div>
         </div>
       </div>
-      <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      <div v-for="item in hero" :key="item.id" class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
         <img
           class="absolute inset-0 w-full h-full object-cover"
-          src="https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format"
-          srcset="https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format 1x, https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format 2x"
+          :src="item.imageUrl"
+          :srcset="item.imageUrl + '1x, ' + item.imageUrl + '&dpr=2 2x'"
           alt="" 
         />
       </div>
@@ -287,6 +287,12 @@ import {
 } from '@heroicons/vue/outline'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 //import { vueImgix } from '~~/plugins/vue-imgix.client.js'
+const hero = [
+  {
+    id: 1,
+    imageUrl: 'https://images.prismic.io/avif/1f4c1c26-54ff-4f74-bdfc-80a226b823c1_photo-1520333789090-1afc82db536a.jpeg?auto=format,compress&w=700'
+  }
+]
 
 const features = [
   {
@@ -359,6 +365,7 @@ export default {
   setup() {
     return {
       features,
+      hero,
       callsToAction,
       resources,
       recentPosts,
